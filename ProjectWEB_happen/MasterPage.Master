@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ProjectWEB_happen.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="wrapper">
+            <header id="hName">
+                Flamingo Feathers
+            </header>
+            <header id="menu">
+                <ul>
+                    <li><div><a href="Home.aspx">Home</a></div></li>
+                    <li><a href="Feathers.aspx#GreyHood">Feathers</a></li>
+                    <li><a href="About.aspx">About</a></li>
+                    <li><a href="Feedback.aspx">Feedback</a></li>
+                    <li><a href="SignUp.aspx">Sign Up</a></li>
+
+                </ul>
+            </header>
+
+
+            <asp:ContentPlaceHolder ID="SlideShow_ContentPlaceHolder" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+            <div id="content_container">
+            <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+
+            </asp:ContentPlaceHolder>
+            </div>
+
+
+
+
+            <footer>
+                <hr id="hr_foot" />
+                <p>
+                    Copyright &copy; 2014 by <a href="mailto:girlzrule_sarah@yahoo.com" target="_blank">Sarah Ahmed</a>
+                    <br />
+                    All rights reserved
+                </p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
